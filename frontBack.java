@@ -1,12 +1,7 @@
-public String front3(String str) {
-  String front;
+public String frontBack(String str) {
+  if (str.length() <=1) return str;
   
-  if (str.length() >= 3) {
-    front = str.substring(0,3);
-  }
-  else {
-    front = str;
-  }
+  String mid = str.substring(1, str.length()-1);
   
-  return front + front + front;
+  return str.charAt(str.length()-1) + mid + str.charAt(0);
 }
